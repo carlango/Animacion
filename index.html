@@ -7,19 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section  class="loading">
-    For new sidebar colors, click your workspace name, then     Preferences > Sidebar > Theme
-    <span class="loading__author"> - Your friends at Slack  
-</span>
+    <section class="loading">
+        For new sidebar colors, click your workspace name, then Preferences > Sidebar > Theme
+        <span class="loading__author"> - Your friends at Slack</span>
 
-<nav>
-    <ul>
-        <li><a href="documental.html">   
-          <span class="loading__anim">1</span></a></li> 
+        <nav>
+            <ul>
+                <li><a href="documental.html">   
+                  <span id="countdown" class="loading__anim">10</span></a></li> 
+            </ul>
+        </nav>
+    </section>
+
+    <script>
+        // Tiempo inicial de la cuenta regresiva en segundos
+        var countdownTime = 10;
         
-    </ul>
-</nav 
-</section>
-
+        // Referencia al elemento span donde se mostrará la cuenta regresiva
+        var countdownElement = document.getElementById('countdown');
+        
+        // Función para actualizar el contenido del span con la cuenta regresiva
+        function updateCountdown() {
+            countdownElement.textContent = countdownTime;
+            countdownTime--;
+            
+            if (countdownTime < 0) {
+                clearInterval(countdownInterval);
+                countdownElement.textContent = "documantal"; // Mensaje al finalizar la cuenta regresiva
+            }
+        }
+        
+        // Llamar a la función updateCountdown cada 1 segundo (1000 ms)
+        var countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
 </body>
 </html>
