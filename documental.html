@@ -12,34 +12,45 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
     <h1>la vida de los programadores</h1>
-
     <p>en los caminos de la programacion vemos que persona presentan desafios dificiles.
     Apesar de que la mayoria de los  personas  piensan que el camino de la programcion es facil 
     siembargo  la seguimos apesar que "algunas persona". Que piensa "me voy hacer un cusos de 2 meses y ya soy un hacker" lo que no saben ellos que el al ser un curso de sistema para aprender aprogramar se nesesita artos tiempo como para hacer un hacker y si eso uno no lo aprende dela noche ala mañana como disen "personas por alli" de vemos enfocarnos y practicar un poco de los tipos de lenguje  <!--aparentar tan dificil alli estamos luchgando con los tipo de lenguagueje
     que vamos aver en el camino primer lenguje  sea por aprender--></p>
+    <div class="colunma">
+    </header>
+
     <section>
     <p>
-        <li>1 JavaScript</li>
+        <li><h2>1 JavaScript</li></h2><p>
         <p>JavaScript es un lenguaje de programación ampliamente utilizado para el desarrollo web. Su funcionalidad es diversa y se puede aplicar en múltiples contextos, tanto en el lado del cliente (navegador) como en el lado del servidor (con Node.js). Aquí te explico algunas de las funcionalidades más importantes de JavaScript:</p>
+    </section>
 
-
-            <h3>1. Manipulación del DOM (Document Object Model)</h3>
-            <p><b>Descrisón:</b> JavaScript puede interactuar con el DOM, lo que permite modificar el contenido y la estructura de las páginas web de manera dinámica.</p>
-
-            <p></p><b>Ejemplo:</b>Cambiar el texto de un párrafo al hacer clic en un botón.</p>
-            javascript
-            Copiar código
+    <section>
+            <h2>1. Manipulación del DOM (Document Object Model)</h2>
+            <p>Descrisón: JavaScript puede interactuar con el DOM, lo que permite modificar 
+            el contenido y la estructura de las páginas web de manera dinámica.
+            Ejemplo:Cambiar el texto de un párrafo al hacer clic en un botón.
+            </p>
+    </section>
+    <section>
+            <h2>javascript</h2>
+           <P>
             document.getElementById('miBoton').addEventListener('click', function() {
-                document.getElementById('miParrafo').textContent = 'Texto cambiado!';
-            });
-            <h3>2.Eventos</h3>
+            document.getElementById('miParrafo').textContent = 'Texto cambiado!';
+            });</P> 
+    </section>
+
+    <section>
+            <h2>2.Eventos</h2>
             <p>Descripción: JavaScript permite responder a eventos como clics, movimientos del ratón, teclados, etc., lo que facilita la creación de interfaces interactivas.
             Ejemplo: Mostrar un mensaje cuando el usuario pasa el ratón sobre un elemento.</p>
+    </section>
 
-            
-            javascript        Copiar código
-            document.getElementById('miElemento').addEventListener('mouseover', function() {
+    <section>
+            <h2>un enjemplo de del codigo de javascript</h2>     
+        <p> ('miElemento').addEventListener('mouseover', function() {
                 alert('Has pasado el ratón por aquí!');
             });
             3. Validación de Formularios
@@ -54,22 +65,28 @@
                     return false;
                 }
                 return true;
-            }
-            4. Asincronía y AJAX
-            Descripción: JavaScript permite realizar solicitudes HTTP a servidores sin recargar la página, lo que mejora la experiencia del usuario mediante la carga dinámica de datos.
+            }</p>
+    </section>
+
+    <section>
+            <h2>4. Asincronía y AJAXh</h2>
+            <p>: JavaScript permite realizar solicitudes HTTP a servidores sin recargar la página, lo que mejora la experiencia del usuario mediante la carga dinámica de datos.
             Ejemplo: Cargar datos de un servidor cuando se hace clic en un botón.
             javascript
             Copiar código
             fetch('https://api.ejemplo.com/datos')
-              .then(response => response.json())
-              .then(data => console.log(data))
-              .catch(error => console.error('Error:', error));
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));
             5. Programación Orientada a Objetos (OOP)
             Descripción: JavaScript soporta la programación orientada a objetos, lo que permite crear objetos reutilizables con propiedades y métodos.
             Ejemplo: Crear una clase y un objeto.
-            javascript
-            Copiar código
-            class Persona {
+        </p>
+    </section>
+<section>
+        <h2>el codigo de javascript</h2>
+            
+            <p>class Persona {
                 constructor(nombre, edad) {
                     this.nombre = nombre;
                     this.edad = edad;
@@ -77,34 +94,37 @@
                 saludar() {
                     console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
                 }
-            }
-            
+            } 
             const persona1 = new Persona('Carlos', 30);
             persona1.saludar();  // Salida: Hola, mi nombre es Carlos y tengo 30 años.
             6. Manipulación de Arrays y Objetos
             Descripción: JavaScript tiene potentes métodos para manipular arrays y objetos, lo que permite realizar tareas como ordenar, filtrar, y transformar datos.
-            Ejemplo: Filtrar un array para obtener números pares.
-            javascript
-            Copiar código
-            const numeros = [1, 2, 3, 4, 5, 6];
+            Ejemplo: Filtrar un array para obtener números pares.</p>
+        </section>
+    <section>
+    </P><h2>El codiogo javascript de ejemplo</h2>
+            <P>const numeros = [1, 2, 3, 4, 5, 6];
             const pares = numeros.filter(numero => numero % 2 === 0);
             console.log(pares);  // Salida: [2, 4, 6]
             7. Funciones de Alto Orden
             Descripción: JavaScript permite usar funciones como ciudadanos de primera clase, es decir, funciones pueden ser pasadas como argumentos, retornadas por otras funciones, y asignadas a variables.
-            Ejemplo: Usar map para transformar un array.
-            javascript
-            Copiar código
-            const numeros = [1, 2, 3, 4];
+            Ejemplo: Usar map para transformar un array.</P>
+    </section>
+        <section>
+            <h2>el codigo de javascript</h2>
+            <p>const numeros = [1, 2, 3, 4];
             const dobles = numeros.map(num => num * 2);
             console.log(dobles);  // Salida: [2, 4, 6, 8]
             8. Compatibilidad Multiplataforma
             Descripción: JavaScript se ejecuta en todos los navegadores modernos, lo que lo convierte en un lenguaje muy accesible para desarrollar aplicaciones web que funcionen en diferentes dispositivos.
             9. Desarrollo en el Lado del Servidor
             Descripción: Con Node.js, JavaScript se puede usar para desarrollar aplicaciones en el lado del servidor, como servidores web, aplicaciones de red, y más.
-            Ejemplo: Crear un servidor web simple con Node.js.
-            javascript
-            Copiar código
-            const http = require('http');
+            Ejemplo: Crear un servidor web simple con Node.js.</p>
+        </section>
+        <section>
+        <h2>el codigo de javascript</h2>
+        
+        <p>const http = require('http');
             
             const server = http.createServer((req, res) => {
                 res.statusCode = 200;
@@ -119,21 +139,29 @@
             Descripción: JavaScript es la base de muchos frameworks y librerías como React, Angular, Vue.js, jQuery, que facilitan el desarrollo de aplicaciones web complejas y modernas.
             11. Manipulación de Fechas y Tiempos
             Descripción: JavaScript incluye objetos y métodos para trabajar con fechas y horas.
-            Ejemplo: Obtener la fecha actual.
-            javascript
-            Copiar código
-            const fechaActual = new Date();
+            Ejemplo: Obtener la fecha actual.</p>
+        </section>
+        <section>
+        <h2>el codigo de javascript</h2>
+            <p>const fechaActual = new Date();
             console.log(fechaActual);  // Salida: muestra la fecha y hora actual.
             JavaScript es un lenguaje extremadamente versátil que se ha convertido en una herramienta esencial en el desarrollo de aplicaciones web modernas.</p>
+        </section>
+        
+        <section>
+    <ol>
         <li>2 html</li>
         <li>3 Python</li>
         <li>4 SQL</li>
         <li>5 C#</li>
         <li>6 PHP</li>
         <li>7 Swift</li>
+    </section>
     </ol>
-</section>
+
+
+<div>
     <img src="image.png" alt=" una persona saturado por que no entiende nada de pregramacion">
-    
+</div>
 </body>
 </html>
