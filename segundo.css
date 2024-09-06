@@ -1,24 +1,36 @@
 
 /* styles.css */
 
+
 body {
+    
     font-family: Arial, sans-serif;
     color: #111010;
     margin: 0;
-    padding: 20px;
+    padding: 400px;
     line-height: 1.6;
-    background-color: #080808;
+    background-color: #00565c;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center; /* Alinea el contenido del contenedor */
+    max-width: 300px;
+    padding: 300px;
+    text-align: left;
 }
 
 header h1 {
     font-size: 2em;
-    color: #e3d6d6;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.1em;
-    color: #666;;
+    color: #000000;;
     margin-bottom: 20px;
 }
 
@@ -29,13 +41,13 @@ section {
 
 section h2 {
     font-size: 1.5em;
-    color: #ece7e7;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 section p {
     font-size: 1.1em;
-    color: #666;
+    color: #000000;
 }
 
 img{
@@ -50,7 +62,7 @@ div {
 }
 ol{
     font-size: 1.5em;
-    color: #ece7e7;
+    color: #000000;
     margin-bottom: 10px;
 }
 
