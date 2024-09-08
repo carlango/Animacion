@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     color: #111010;
     margin: 0;
-    padding: 400px;
+    padding: 300px ;
     line-height: 1.6;
     background-color: #00565c;
     justify-content: center; 
@@ -65,5 +65,48 @@ ol{
     color: #000000;
     margin-bottom: 10px;
 }
+/* Estilos básicos para los botones */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+    margin-top: 50px;
+}
+
+.social-button {
+    text-decoration: none;
+    display: inline-block;
+    width:50px;
+    height: 50px;
+}
+
+.social-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para el efecto hover (al pasar el ratón sobre el botón) */
+.social-button:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilos opcionales específicos para cada red social (colores, etc.) */
+.facebook {
+    background-color: #1b61f6;
+}
+
+.twitter {
+    background-color: black;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+.Gmail{
+    background-color: white;
+}
+
 
 
