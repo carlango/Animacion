@@ -7,12 +7,13 @@ body {
     font-family: Arial, sans-serif;
     color: #111010;
     margin: 0;
-    padding: 300px ;
+    padding: 50px 300px  0px;
     line-height: 1.6;
     background-color: #00565c;
     justify-content: center; 
     align-items: center; 
     min-height: 100vh;
+    
 }
 
 .container {
@@ -28,12 +29,22 @@ header h1 {
     margin-bottom: 10px;
 }
 
+h3{
+    color: #000000;
+    margin-bottom: 20;
+}
 header p {
     font-size: 1.1em;
-    color: #000000;;
+    color: #000000;
     margin-bottom: 20px;
-}
 
+}
+p{
+font-size:  arial, sans-serif;
+color: #000000;
+font-size: 1.1em;
+margin-bottom: 20px;
+ }
 section {
     margin-bottom:  20px;
 
@@ -107,6 +118,39 @@ ol{
 .Gmail{
     background-color: white;
 }
+
+/* Este es el codigo de ta lable de estibulizasion */
+table.codigo {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+table.codigo th, table.codigo td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+table.codigo th {
+    background-color: #444;
+    
+}
+
+code {
+    background-color: #222;
+    padding: 4px 8px;
+    border-radius: 10px;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
 
 
 
