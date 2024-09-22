@@ -432,8 +432,7 @@ html</p>
 <p>CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación y el diseño de un documento escrito en HTML o XML. Su función principal es controlar la apariencia de los elementos en una página web, tales como colores, tipografía, espaciado, bordes y disposición. A continuación, te explico algunas de las funciones principales de CSS:</p>
 
 <h3>1. Estilizar el Texto></h3>
-<h2>CSS permite cambiar la apariencia del texto de varias maneras:<p></p>
-
+<h2>CSS permite cambiar la apariencia del texto de varias maneras:
 <p>Color del texto:</p>
 
 <table class="codigo">
@@ -570,7 +569,7 @@ display: inline;
                 </tr>
             </table>
 
-            <ul>
+            <>
                 <li>Flexbox: Para crear diseños flexibles y responsivos</li><
             </ul>
             <table class="codigo">
@@ -608,7 +607,7 @@ grid-template-columns: repeat(3, 1fr);
                     </td>
                 </tr>
             </table>
-            <h2>4. Colores y Fondos</h2>
+<h2>4. Colores y Fondos</h2>
 <ul>
     <h4><li>Color de fondo:</li></h4>
 </ul>
@@ -622,7 +621,6 @@ grid-template-columns: repeat(3, 1fr);
         <td>
 <pre><code>
 background-color: #f0f0f0;
-
 </code></pre>
         </td>
     </tr>
@@ -647,14 +645,14 @@ background-color: #f0f0f0;
 </code></pre>
         </td>
     </tr>
-</tabla>
+</table>
 
-<h2>5. Bordes y Sombras</h2>
+<h2> 5. Bordes y Sombras</h2>
 <p>CSS permite agregar bordes y sombras a los elementos.</p>
 <ul>
     <li>Bordes:</li>
 </ul>
-<table class="codigo"></table>
+<table class="codigo">
     <tr>
         <th>Lenguaje</th>
         <th>Ejemplo de Código</th>
@@ -668,8 +666,231 @@ background-color: #f0f0f0;
 </code></pre>
         </td>
     </tr>
-</tabla>
+</table>
 
+<ul><li>Sombras en los bordes:</li></ul>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+    box-shadow: 2px 2px 5px gray;
+
+</code></pre>
+        </td>
+    </tr>
+</table>
+
+<ul><li>Sombras en el texto:</li></ul>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+ext-shadow: 1px 1px 2px black;
+
+</code></pre>
+        </td>
+    </tr>
+</table>
+
+<h2>6. Animaciones y Transiciones</h2>
+<p>CSS permite agregar efectos de animación y transiciones suaves a los elementos</p>
+<ul><li>Transiciones: para hacer que los cambios de estilo sean más suaves.</li></ul>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+    transition: all 0.3s ease;
+
+</code></pre>
+        </td>
+    </tr>
+</table>
+
+<ul><li>Animaciones:</li></ul>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+    @keyframes ejemplo {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      animation: ejemplo 2s ease-in-out;
+
+</code></pre>
+        </td>
+    </tr>
+</table>
+
+<h2>7. Diseño Responsivo</h2>
+<p>CSS también permite que las páginas web se adapten a diferentes tamaños de pantalla, lo cual es fundamental para que el sitio se vea bien en dispositivos móviles.</p>
+
+<ul><li>Media Queries:</li></ul>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+    @media (max-width: 768px) {
+        body {
+          background-color: lightgray;
+        }
+      }
+
+</code></pre>
+        </td>
+    </tr>
+</table>
+<h2>8. Estilización de Listas y Tablas</h2>
+<ul><li>Listas: Puedes personalizar las listas (con viñetas o numeradas).</li></ul>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+    list-style-type: square;
+
+</code></pre>
+        </td>
+    </tr>
+</table>
+
+<ul><li>Tablas: Controlar el estilo de tablas y celdas.</li></ul>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+    border-collapse: collapse;
+
+</code></pre>
+        </td>
+    </tr>
+</table>
+
+<h2>9. Control de Visibilidad</h2>
+<p>CSS permite ocultar o mostrar elementos sin eliminarlos del HTML.</p>
+<ul><li>Ocultar elementos:</li></ul>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+    visibility: hidden;
+
+</code></pre>
+        </td>
+    </tr>
+</table>
+
+<ul><li>Eliminar el espacio ocupado por un elemento oculto</li></ul>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+    display: none;
+
+</code></pre>
+        </td>
+    </tr>
+</table>
+<h2>Posicionamiento<</h2>
+<p>Controla la posición de los elementos dentro de la página.</p>
+
+<ul><li>Posición relativa, absoluta y fija:</li></ul>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+    position: relative; /* Elemento se mueve en relación a su posición original */
+    position: absolute; /* Elemento se mueve en relación a su contenedor */
+    position: fixed;    /* Elemento permanece fijo en la pantalla */
+    
+</code></pre>
+        </td>
+    </tr>
+</table>
+
+<h2>Ejemplo básico de un archivo CSS:</h2>
+<table class="codigo">
+    <tr>
+        <th>Lenguaje</th>
+        <th>Ejemplo de Código</th>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>
+<pre><code>
+    body {
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 2em;
+        color: #555;
+        text-align: center;
+    }
+    
+    p {
+        line-height: 1.6;
+        padding: 10px;
+    }
+    
+    
+</code></pre>
+        </td>
+    </tr>
+</table
         <h2>1 JavaScript</h2>
         <p>JavaScript es un lenguaje de programación ampliamente utilizado para el desarrollo web. Su funcionalidad es diversa y se puede aplicar en múltiples contextos, tanto en el lado del cliente (navegador) como en el lado del servidor (con Node.js). Aquí te explico algunas de las funcionalidades más importantes de JavaScript:</p>
     </section>
